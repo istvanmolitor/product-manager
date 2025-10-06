@@ -12,6 +12,13 @@
             "options": {
                 "symlink": true
             }
+        },
+        {
+            "type": "path",
+            "url": "packages/language",
+            "options": {
+                "symlink": true
+            }
         }
     ],
     "require": {
@@ -19,7 +26,8 @@
         "filament/filament": "^4.0",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
-        "molitor/currency": "*@dev"
+        "molitor/currency": "*@dev",
+        "molitor/language": "*@dev"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

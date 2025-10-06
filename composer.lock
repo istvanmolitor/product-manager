@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8d83500c93e518fd77090bc353b16006",
+    "content-hash": "a81a8e00d6d6fea3638047ef2cb7e4c8",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -3314,7 +3314,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/currency",
-                "reference": "bee172fe9d55d9812e59d1876efed344b965dc7d"
+                "reference": "bb5ddbed67f0eed018ddd0a63514bee4fd89a77e"
             },
             "type": "library",
             "extra": {
@@ -3340,6 +3340,43 @@
                 }
             ],
             "description": "Currency",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "molitor/language",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/language",
+                "reference": "345627997c1d999fe34e9d75f67c901f92ae154f"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Molitor\\Language\\Providers\\LanguageServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\Language\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "Language",
             "transport-options": {
                 "symlink": true,
                 "relative": true
@@ -10563,13 +10600,14 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "molitor/currency": 20
+        "molitor/currency": 20,
+        "molitor/language": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.2"
     },
-    "platform-dev": {},
+    "platform-dev": [],
     "plugin-api-version": "2.6.0"
 }
