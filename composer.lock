@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a81a8e00d6d6fea3638047ef2cb7e4c8",
+    "content-hash": "5c18cdbe84cc3dfe195420415e2909f9",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -3351,7 +3351,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/language",
-                "reference": "345627997c1d999fe34e9d75f67c901f92ae154f"
+                "reference": "5f56e7c221362efc373cdd9ca98d20f78a9eaaa9"
             },
             "type": "library",
             "extra": {
@@ -3377,6 +3377,45 @@
                 }
             ],
             "description": "Language",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "molitor/product",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/product",
+                "reference": "450ddc294cb118be9dce9d0394e2eb70fa28edf8"
+            },
+            "require": {
+                "molitor/currency": "*@dev"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Molitor\\Product\\Providers\\ProductServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\Product\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "Product",
             "transport-options": {
                 "symlink": true,
                 "relative": true
@@ -10601,7 +10640,8 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "molitor/currency": 20,
-        "molitor/language": 20
+        "molitor/language": 20,
+        "molitor/product": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
