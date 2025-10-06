@@ -20,6 +20,8 @@ use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Molitor\Currency\Filament\Resources\CurrencyResource;
 use Molitor\Language\Filament\Resources\LanguageResource;
+use Molitor\Product\Filament\Resources\ProductFieldOptionResource;
+use Molitor\Product\Filament\Resources\ProductFieldResource;
 use Molitor\Product\Filament\Resources\ProductUnitResource;
 
 class AdminPanelProvider extends PanelProvider
@@ -39,6 +41,8 @@ class AdminPanelProvider extends PanelProvider
                 CurrencyResource::class,
                 LanguageResource::class,
                 ProductUnitResource::class,
+                ProductFieldResource::class,
+                ProductFieldOptionResource::class,
             ])
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->pages([
