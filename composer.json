@@ -26,6 +26,20 @@
             "options": {
                 "symlink": true
             }
+        },
+        {
+            "type": "path",
+            "url": "packages/address",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "packages/customer",
+            "options": {
+                "symlink": true
+            }
         }
     ],
     "require": {
@@ -35,7 +49,9 @@
         "laravel/tinker": "^2.10.1",
         "molitor/currency": "*@dev",
         "molitor/language": "*@dev",
-        "molitor/product": "*@dev"
+        "molitor/product": "*@dev",
+        "molitor/address": "*@dev",
+        "molitor/customer": "*@dev"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

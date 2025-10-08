@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Molitor\Address\database\seeders\AddressSeeder;
 use Molitor\Currency\database\seeders\CurrencySeeder;
 use Molitor\Language\database\seeders\LanguageSeeder;
 use Molitor\Product\database\seeders\ProductSeeder;
@@ -20,6 +21,7 @@ class DatabaseSeeder extends Seeder
             CurrencySeeder::class,
             LanguageSeeder::class,
             ProductSeeder::class,
+            AddressSeeder::class,
         ]);
 
         User::factory()->create([
