@@ -7,6 +7,7 @@ use App\Models\User;
 use Illuminate\Database\Seeder;
 use Molitor\Currency\database\seeders\CurrencySeeder;
 use Molitor\Language\database\seeders\LanguageSeeder;
+use Molitor\Product\database\seeders\ProductSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -18,6 +19,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             CurrencySeeder::class,
             LanguageSeeder::class,
+            ProductSeeder::class,
         ]);
 
         User::factory()->create([
