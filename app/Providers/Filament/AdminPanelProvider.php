@@ -31,6 +31,8 @@ use Molitor\Customer\Filament\Resources\CustomerResource;
 use Molitor\Address\Filament\Resources\CountryResource;
 use Molitor\Order\Filament\Resources\OrderResource;
 use Molitor\Order\Filament\Resources\OrderStatusResource;
+use Molitor\Stock\Filament\Resources\WarehouseResource;
+use Molitor\Stock\Filament\Resources\WarehouseRegionResource;
 class AdminPanelProvider extends PanelProvider
 {
     public function panel(Panel $panel): Panel
@@ -57,7 +59,10 @@ class AdminPanelProvider extends PanelProvider
                 CountryResource::class,
                 OrderResource::class,
                 OrderStatusResource::class,
+                WarehouseResource::class,
+                WarehouseRegionResource::class,
                 UnasShopResource::class,
+                \Molitor\Unas\Filament\Resources\UnasProductResource::class,
             ])
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->pages([

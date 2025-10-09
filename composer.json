@@ -54,6 +54,13 @@
             "options": {
                 "symlink": true
             }
+        },
+        {
+            "type": "path",
+            "url": "packages/stock",
+            "options": {
+                "symlink": true
+            }
         }
     ],
     "require": {
@@ -67,7 +74,8 @@
         "molitor/address": "*@dev",
         "molitor/customer": "*@dev",
         "molitor/order": "*@dev",
-        "molitor/unas": "*@dev"
+        "molitor/unas": "*@dev",
+        "molitor/stock": "*@dev"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

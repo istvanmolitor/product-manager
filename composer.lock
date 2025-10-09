@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6a9be4a7c921f4b78b6e7100fb07902a",
+    "content-hash": "7f0314157aae632976698af4528fc788",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -3496,7 +3496,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/product",
-                "reference": "c327ba565760e20ec6eaacb6cdb74c0a1003f484"
+                "reference": "9dd5c887a4ad5dec3fe9ea007568531ea7180553"
             },
             "require": {
                 "molitor/currency": "*@dev"
@@ -3530,12 +3530,48 @@
             }
         },
         {
+            "name": "molitor/stock",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/stock",
+                "reference": "ea1749699bc6878c9bffc4361bdb28e6d91d43ba"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Molitor\\Stock\\Providers\\StockServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\Stock\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "Stock",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
             "name": "molitor/unas",
             "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "packages/unas",
-                "reference": "3dd055a0c5dc6437c0236aacd649627267279800"
+                "reference": "face1f6faed6bcc4eeaa98ae73efd86ae9788229"
             },
             "type": "library",
             "extra": {
@@ -10789,6 +10825,7 @@
         "molitor/language": 20,
         "molitor/order": 20,
         "molitor/product": 20,
+        "molitor/stock": 20,
         "molitor/unas": 20
     },
     "prefer-stable": true,
