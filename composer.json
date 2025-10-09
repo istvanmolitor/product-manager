@@ -40,6 +40,13 @@
             "options": {
                 "symlink": true
             }
+        },
+        {
+            "type": "path",
+            "url": "packages/order",
+            "options": {
+                "symlink": true
+            }
         }
     ],
     "require": {
@@ -51,7 +58,8 @@
         "molitor/language": "*@dev",
         "molitor/product": "*@dev",
         "molitor/address": "*@dev",
-        "molitor/customer": "*@dev"
+        "molitor/customer": "*@dev",
+        "molitor/order": "*@dev"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
