@@ -29,6 +29,7 @@ use Molitor\Unas\Filament\Resources\UnasShopResource;
 use Molitor\Customer\Filament\Resources\CustomerGroupResource;
 use Molitor\Customer\Filament\Resources\CustomerResource;
 use Molitor\Address\Filament\Resources\CountryResource;
+use Molitor\Order\Filament\Resources\OrderResource;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -54,6 +55,7 @@ class AdminPanelProvider extends PanelProvider
                 CustomerGroupResource::class,
                 CustomerResource::class,
                 CountryResource::class,
+                OrderResource::class,
                 //UnasShopResource::class,
             ])
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
