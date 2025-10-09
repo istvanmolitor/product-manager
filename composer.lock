@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "76951667ed5002a405e3568a177fe662",
+    "content-hash": "6a9be4a7c921f4b78b6e7100fb07902a",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -3460,7 +3460,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/order",
-                "reference": "73091db7eb0e556fa42a59124ea554ea8bcfe12e"
+                "reference": "aa4f9420e77530e016705308fe304a1d9f659769"
             },
             "type": "library",
             "extra": {
@@ -3524,6 +3524,42 @@
                 }
             ],
             "description": "Product",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "molitor/unas",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/unas",
+                "reference": "3dd055a0c5dc6437c0236aacd649627267279800"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Molitor\\Unas\\Providers\\UnasServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\Unas\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "UNAS",
             "transport-options": {
                 "symlink": true,
                 "relative": true
@@ -10752,7 +10788,8 @@
         "molitor/customer": 20,
         "molitor/language": 20,
         "molitor/order": 20,
-        "molitor/product": 20
+        "molitor/product": 20,
+        "molitor/unas": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

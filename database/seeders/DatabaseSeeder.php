@@ -8,6 +8,7 @@ use Illuminate\Database\Seeder;
 use Molitor\Address\database\seeders\AddressSeeder;
 use Molitor\Currency\database\seeders\CurrencySeeder;
 use Molitor\Language\database\seeders\LanguageSeeder;
+use Molitor\Order\database\seeders\OrderSeeder;
 use Molitor\Product\database\seeders\ProductSeeder;
 
 class DatabaseSeeder extends Seeder
@@ -22,6 +23,7 @@ class DatabaseSeeder extends Seeder
             LanguageSeeder::class,
             ProductSeeder::class,
             AddressSeeder::class,
+            OrderSeeder::class,
         ]);
 
         User::factory()->create([
