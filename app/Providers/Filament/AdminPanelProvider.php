@@ -65,6 +65,7 @@ class AdminPanelProvider extends PanelProvider
                 WarehouseRegionResource::class,
                 UnasShopResource::class,
                 UnasProductResource::class,
+                BarcodeResource::class,
             ])
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->pages([
