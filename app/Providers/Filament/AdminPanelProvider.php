@@ -20,11 +20,13 @@ use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Molitor\Currency\Filament\Resources\CurrencyResource;
 use Molitor\Language\Filament\Resources\LanguageResource;
+use Molitor\Product\Filament\Resources\BarcodeResource;
 use Molitor\Product\Filament\Resources\ProductCategoryResource;
 use Molitor\Product\Filament\Resources\ProductFieldOptionResource;
 use Molitor\Product\Filament\Resources\ProductFieldResource;
 use Molitor\Product\Filament\Resources\ProductResource;
 use Molitor\Product\Filament\Resources\ProductUnitResource;
+use Molitor\Unas\Filament\Resources\UnasProductResource;
 use Molitor\Unas\Filament\Resources\UnasShopResource;
 use Molitor\Customer\Filament\Resources\CustomerGroupResource;
 use Molitor\Customer\Filament\Resources\CustomerResource;
@@ -62,7 +64,7 @@ class AdminPanelProvider extends PanelProvider
                 WarehouseResource::class,
                 WarehouseRegionResource::class,
                 UnasShopResource::class,
-                \Molitor\Unas\Filament\Resources\UnasProductResource::class,
+                UnasProductResource::class,
             ])
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->pages([
