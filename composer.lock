@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7f0314157aae632976698af4528fc788",
+    "content-hash": "e7f0d66d4cea03fb0e5c3110a55a3ee9",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -3314,7 +3314,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/address",
-                "reference": "daec8413cbb08446d847fcc2a32c5dd707eead2e"
+                "reference": "4f8fe1dd956f6c00dbb8875864480ebccdcfd8ac"
             },
             "type": "library",
             "extra": {
@@ -3387,7 +3387,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/customer",
-                "reference": "36ca593112e986180a5a3c3a576e8e3dd98327e1"
+                "reference": "a41aca40baf48ffeb8ab4ee5df336c62a352556f"
             },
             "type": "library",
             "extra": {
@@ -3496,7 +3496,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/product",
-                "reference": "9dd5c887a4ad5dec3fe9ea007568531ea7180553"
+                "reference": "336d23fb21211070e4d5ca8b075f4f2e2a323191"
             },
             "require": {
                 "molitor/currency": "*@dev"
@@ -3535,7 +3535,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/stock",
-                "reference": "ea1749699bc6878c9bffc4361bdb28e6d91d43ba"
+                "reference": "870248eb163ca55ed4de7857549da8be9b2cf014"
             },
             "type": "library",
             "extra": {
@@ -3596,6 +3596,42 @@
                 }
             ],
             "description": "UNAS",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "molitor/user",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/user",
+                "reference": "15177eeaa940c483b2f2dccfb9d30b94aa2fe01b"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Molitor\\User\\Providers\\UserServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\User\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "User",
             "transport-options": {
                 "symlink": true,
                 "relative": true
@@ -10826,7 +10862,8 @@
         "molitor/order": 20,
         "molitor/product": 20,
         "molitor/stock": 20,
-        "molitor/unas": 20
+        "molitor/unas": 20,
+        "molitor/user": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
