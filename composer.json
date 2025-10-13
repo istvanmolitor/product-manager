@@ -68,6 +68,13 @@
             "options": {
                 "symlink": true
             }
+        },
+        {
+            "type": "path",
+            "url": "packages/purchase",
+            "options": {
+                "symlink": true
+            }
         }
     ],
     "require": {
@@ -83,7 +90,8 @@
         "molitor/order": "*@dev",
         "molitor/unas": "*@dev",
         "molitor/stock": "*@dev",
-        "molitor/user": "*@dev"
+        "molitor/user": "*@dev",
+        "molitor/purchase": "*@dev"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

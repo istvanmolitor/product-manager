@@ -26,6 +26,7 @@ use Molitor\Product\Filament\Resources\ProductFieldOptionResource;
 use Molitor\Product\Filament\Resources\ProductFieldResource;
 use Molitor\Product\Filament\Resources\ProductResource;
 use Molitor\Product\Filament\Resources\ProductUnitResource;
+use Molitor\Purchase\Filament\Resources\PurchaseResource;
 use Molitor\Unas\Filament\Resources\UnasProductResource;
 use Molitor\Unas\Filament\Resources\UnasShopResource;
 use Molitor\Customer\Filament\Resources\CustomerGroupResource;
@@ -74,6 +75,7 @@ class AdminPanelProvider extends PanelProvider
                 PermissionResource::class,
                 UserGroupResource::class,
                 UserResource::class,
+                PurchaseResource::class,
             ])
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->pages([
