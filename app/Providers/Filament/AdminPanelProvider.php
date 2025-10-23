@@ -75,7 +75,7 @@ class AdminPanelProvider extends PanelProvider
                 PermissionResource::class,
                 UserGroupResource::class,
                 UserResource::class,
-                PurchaseResource::class,
+                //PurchaseResource::class,
             ])
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->pages([

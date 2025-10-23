@@ -75,6 +75,13 @@
             "options": {
                 "symlink": true
             }
+        },
+        {
+            "type": "path",
+            "url": "packages/setting",
+            "options": {
+                "symlink": true
+            }
         }
     ],
     "require": {
@@ -91,7 +98,8 @@
         "molitor/unas": "*@dev",
         "molitor/stock": "*@dev",
         "molitor/user": "*@dev",
-        "molitor/purchase": "*@dev"
+        "molitor/purchase": "*@dev",
+        "molitor/setting": "*@dev"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

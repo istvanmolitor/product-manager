@@ -3,8 +3,8 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
-use Molitor\ArticleParser\Services\UnasProductParser;
-use Molitor\ProductParser\Services\ProductParserService;
+use Molitor\Product\Models\Product;
+use Molitor\Product\Services\Dto\ProductDtoService;
 
 class Teszt extends Command
 {
@@ -27,10 +27,11 @@ class Teszt extends Command
      */
     public function handle()
     {
-        $s = new ProductParserService();
-        $s->registerProductParser('kockaklub.unas.hu', UnasProductParser::class);
+        $p = Product::find(1);
 
-        $product = $s->parseUrl('https://kockaklub.unas.hu/QiYi-QiHeng');
-        dd($product);
+        /** @var ProductDtoService $ps */
+        $ps = app(ProductDtoService::class);
+        $dto = $ps->makeDto($p);
+        dd($dto);
     }
 }
