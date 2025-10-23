@@ -7,9 +7,11 @@ use App\Models\User;
 use Illuminate\Database\Seeder;
 use Molitor\Address\database\seeders\AddressSeeder;
 use Molitor\Currency\database\seeders\CurrencySeeder;
+use Molitor\Customer\database\seeders\CustomerSeeder;
 use Molitor\Language\database\seeders\LanguageSeeder;
 use Molitor\Order\database\seeders\OrderSeeder;
 use Molitor\Product\database\seeders\ProductSeeder;
+use Molitor\Purchase\database\seeders\PurchaseSeeder;
 use Molitor\Stock\database\seeders\StockSeeder;
 use Molitor\Unas\database\seeders\UnasSeeder;
 use Molitor\User\database\seeders\UserSeeder;
@@ -30,6 +32,8 @@ class DatabaseSeeder extends Seeder
             OrderSeeder::class,
             StockSeeder::class,
             UnasSeeder::class,
+            CustomerSeeder::class,
+            PurchaseSeeder::class,
         ]);
     }
 }
