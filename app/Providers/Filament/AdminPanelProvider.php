@@ -27,6 +27,7 @@ use Molitor\Product\Filament\Resources\ProductFieldResource;
 use Molitor\Product\Filament\Resources\ProductResource;
 use Molitor\Product\Filament\Resources\ProductUnitResource;
 use Molitor\Purchase\Filament\Resources\PurchaseResource;
+use Molitor\Setting\Filament\Pages\SettingsPage;
 use Molitor\Unas\Filament\Resources\UnasProductResource;
 use Molitor\Unas\Filament\Resources\UnasShopResource;
 use Molitor\Customer\Filament\Resources\CustomerGroupResource;
@@ -36,6 +37,7 @@ use Molitor\Order\Filament\Resources\OrderResource;
 use Molitor\Order\Filament\Resources\OrderStatusResource;
 use Molitor\Stock\Filament\Resources\WarehouseResource;
 use Molitor\Stock\Filament\Resources\WarehouseRegionResource;
+use Molitor\Unas\Filament\Widgets\ProductCountWidget;
 use Molitor\User\Filament\Resources\PermissionResource;
 use Molitor\User\Filament\Resources\UserGroupResource;
 use Molitor\User\Filament\Resources\UserResource;
@@ -73,18 +75,17 @@ class AdminPanelProvider extends PanelProvider
                 BarcodeResource::class,
                 UserGroupResource::class,
                 PermissionResource::class,
-                UserGroupResource::class,
                 UserResource::class,
                 PurchaseResource::class,
             ])
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->pages([
                 Dashboard::class,
+                SettingsPage::class,
             ])
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\Filament\Widgets')
             ->widgets([
-                AccountWidget::class,
-                FilamentInfoWidget::class,
+                ProductCountWidget::class,
             ])
             ->middleware([
                 EncryptCookies::class,

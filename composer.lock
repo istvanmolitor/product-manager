@@ -2038,16 +2038,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v12.35.0",
+            "version": "v12.35.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "9583ef9e405a71d5b8c04ff6efd05a7ef9a5baef"
+                "reference": "d6d6e3cb68238e2fb25b440f222442adef5a8a15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/9583ef9e405a71d5b8c04ff6efd05a7ef9a5baef",
-                "reference": "9583ef9e405a71d5b8c04ff6efd05a7ef9a5baef",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/d6d6e3cb68238e2fb25b440f222442adef5a8a15",
+                "reference": "d6d6e3cb68238e2fb25b440f222442adef5a8a15",
                 "shasum": ""
             },
             "require": {
@@ -2253,7 +2253,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2025-10-21T15:15:41+00:00"
+            "time": "2025-10-23T15:25:03+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -3387,7 +3387,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/customer",
-                "reference": "e3f2975ba2b7fad49ad8b04f71737ad57b764bae"
+                "reference": "71fbe6411079efbfd423d0bcb5406ce415cf4fa7"
             },
             "type": "library",
             "extra": {
@@ -3423,7 +3423,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/language",
-                "reference": "19f6aef857b6f53d62d5d551aa6557cf427ed3a0"
+                "reference": "bcb33fc081cc716b0bd7f6a216ee0363079b4594"
             },
             "type": "library",
             "extra": {
@@ -3496,7 +3496,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/product",
-                "reference": "33b603e2fc63e700c882f15e21be045c89efe515"
+                "reference": "bf54496592bf8ee6de86427f11ccd94b1ea582bd"
             },
             "require": {
                 "molitor/currency": "*@dev"
@@ -3535,7 +3535,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/purchase",
-                "reference": "bf8b1d309d5c89b2a7bc215b1a48130b45b3757a"
+                "reference": "af158c795af8c130154e99b707451128439a280a"
             },
             "type": "library",
             "extra": {
@@ -3571,7 +3571,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/setting",
-                "reference": "bea8b9189140358429d8729ddc7f6d871b30793d"
+                "reference": "ed4d8a3ebe70ea0d159428d7a8f83972c9b7dce1"
             },
             "type": "library",
             "extra": {
@@ -3643,7 +3643,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/unas",
-                "reference": "f1328253d3483d7374354f94e92c4cfb9c2e1d2f"
+                "reference": "2e3bef76e7c1f8226120cb12557cdc153b73e6ea"
             },
             "require": {
                 "ext-curl": "*",
