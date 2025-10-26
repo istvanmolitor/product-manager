@@ -4,7 +4,6 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 use Molitor\Product\Models\Product;
-use Molitor\Product\Services\Dto\ProductDtoService;
 
 class Teszt extends Command
 {
@@ -27,11 +26,6 @@ class Teszt extends Command
      */
     public function handle()
     {
-        $p = Product::find(1);
-
-        /** @var ProductDtoService $ps */
-        $ps = app(ProductDtoService::class);
-        $dto = $ps->makeDto($p);
-        dd($dto);
+        Product::factory()->count(10)->create();
     }
 }
