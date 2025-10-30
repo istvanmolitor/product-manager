@@ -10,8 +10,6 @@ use Filament\Pages\Dashboard;
 use Filament\Panel;
 use Filament\PanelProvider;
 use Filament\Support\Colors\Color;
-use Filament\Widgets\AccountWidget;
-use Filament\Widgets\FilamentInfoWidget;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Illuminate\Cookie\Middleware\EncryptCookies;
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
@@ -20,6 +18,7 @@ use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Molitor\Currency\Filament\Resources\CurrencyResource;
 use Molitor\Language\Filament\Resources\LanguageResource;
+use Molitor\Order\Filament\Resources\OrderResource;
 use Molitor\Product\Filament\Resources\BarcodeResource;
 use Molitor\Product\Filament\Resources\ProductCategoryResource;
 use Molitor\Product\Filament\Resources\ProductFieldOptionResource;
@@ -28,12 +27,13 @@ use Molitor\Product\Filament\Resources\ProductResource;
 use Molitor\Product\Filament\Resources\ProductUnitResource;
 use Molitor\Purchase\Filament\Resources\PurchaseResource;
 use Molitor\Setting\Filament\Pages\SettingsPage;
+use Molitor\Stock\Filament\Resources\WarehouseProductResource;
+use Molitor\Stock\Filament\Resources\StockMovementResource;
 use Molitor\Unas\Filament\Resources\UnasProductResource;
 use Molitor\Unas\Filament\Resources\UnasShopResource;
 use Molitor\Customer\Filament\Resources\CustomerGroupResource;
 use Molitor\Customer\Filament\Resources\CustomerResource;
 use Molitor\Address\Filament\Resources\CountryResource;
-use Molitor\Order\Filament\Resources\OrderResource;
 use Molitor\Order\Filament\Resources\OrderStatusResource;
 use Molitor\Stock\Filament\Resources\WarehouseResource;
 use Molitor\Stock\Filament\Resources\WarehouseRegionResource;
@@ -66,8 +66,8 @@ class AdminPanelProvider extends PanelProvider
                 CustomerGroupResource::class,
                 CustomerResource::class,
                 CountryResource::class,
-                OrderResource::class,
                 OrderStatusResource::class,
+                OrderResource::class,
                 WarehouseResource::class,
                 WarehouseRegionResource::class,
                 UnasShopResource::class,
@@ -77,6 +77,8 @@ class AdminPanelProvider extends PanelProvider
                 PermissionResource::class,
                 UserResource::class,
                 PurchaseResource::class,
+                WarehouseProductResource::class,
+                StockMovementResource::class,
             ])
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->pages([
