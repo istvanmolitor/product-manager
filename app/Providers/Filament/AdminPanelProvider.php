@@ -26,6 +26,7 @@ use Molitor\Product\Filament\Resources\ProductFieldResource;
 use Molitor\Product\Filament\Resources\ProductResource;
 use Molitor\Product\Filament\Resources\ProductUnitResource;
 use Molitor\Purchase\Filament\Resources\PurchaseResource;
+use Molitor\Purchase\Filament\Resources\PurchaseStatusResource;
 use Molitor\Setting\Filament\Pages\SettingsPage;
 use Molitor\Stock\Filament\Resources\WarehouseProductResource;
 use Molitor\Stock\Filament\Resources\StockMovementResource;
@@ -77,6 +78,7 @@ class AdminPanelProvider extends PanelProvider
                 PermissionResource::class,
                 UserResource::class,
                 PurchaseResource::class,
+                PurchaseStatusResource::class,
                 WarehouseProductResource::class,
                 StockMovementResource::class,
             ])
