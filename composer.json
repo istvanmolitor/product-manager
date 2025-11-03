@@ -82,6 +82,13 @@
             "options": {
                 "symlink": true
             }
+        },
+        {
+            "type": "path",
+            "url": "packages/customer_product",
+            "options": {
+                "symlink": true
+            }
         }
     ],
     "require": {
@@ -100,7 +107,7 @@
         "molitor/stock": "*@dev",
         "molitor/unas": "*@dev",
         "molitor/user": "*@dev",
-        "prism-php/prism": "*"
+        "molitor/customer_product": "*@dev"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
