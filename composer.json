@@ -89,6 +89,13 @@
             "options": {
                 "symlink": true
             }
+        },
+        {
+            "type": "path",
+            "url": "packages/scraper",
+            "options": {
+                "symlink": true
+            }
         }
     ],
     "require": {
@@ -107,7 +114,8 @@
         "molitor/stock": "*@dev",
         "molitor/unas": "*@dev",
         "molitor/user": "*@dev",
-        "molitor/customer_product": "*@dev"
+        "molitor/customer_product": "*@dev",
+        "molitor/scraper": "*@dev"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

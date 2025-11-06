@@ -17,6 +17,8 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Molitor\Currency\Filament\Resources\CurrencyResource;
+use Molitor\CustomerProduct\Filament\Resources\CustomerProductResource;
+use Molitor\CustomerProduct\Filament\Resources\CustomerListResource;
 use Molitor\Language\Filament\Resources\LanguageResource;
 use Molitor\Order\Filament\Resources\OrderResource;
 use Molitor\Product\Filament\Resources\BarcodeResource;
@@ -42,6 +44,7 @@ use Molitor\Unas\Filament\Widgets\ProductCountWidget;
 use Molitor\User\Filament\Resources\PermissionResource;
 use Molitor\User\Filament\Resources\UserGroupResource;
 use Molitor\User\Filament\Resources\UserResource;
+use Molitor\Scraper\Filament\Resources\ScraperResource;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -82,6 +85,10 @@ class AdminPanelProvider extends PanelProvider
                 PurchaseStatusResource::class,
                 WarehouseProductResource::class,
                 StockMovementResource::class,
+                ScraperResource::class,
+                CustomerProductResource::class,
+                CustomerListResource::class,
+                ScraperResource::class,
             ])
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->pages([

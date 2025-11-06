@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e57f04b671fa3172c65096422a16ae8a",
+    "content-hash": "95d7d9463f83c37b89d6fd29f1b12484",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -2084,16 +2084,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v12.36.1",
+            "version": "v12.37.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "cad110d7685fbab990a6bb8184d0cfd847d7c4d8"
+                "reference": "3c3c4ad30f5b528b164a7c09aa4ad03118c4c125"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/cad110d7685fbab990a6bb8184d0cfd847d7c4d8",
-                "reference": "cad110d7685fbab990a6bb8184d0cfd847d7c4d8",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/3c3c4ad30f5b528b164a7c09aa4ad03118c4c125",
+                "reference": "3c3c4ad30f5b528b164a7c09aa4ad03118c4c125",
                 "shasum": ""
             },
             "require": {
@@ -2299,7 +2299,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2025-10-29T14:20:57+00:00"
+            "time": "2025-11-04T15:39:33+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -3360,7 +3360,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/address",
-                "reference": "78c343dbf3a6813846c16e6361350cbec3b7ce01"
+                "reference": "04ea4bc8325698033268cc44d9182174bd14ad1d"
             },
             "type": "library",
             "extra": {
@@ -3433,7 +3433,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/customer",
-                "reference": "71fbe6411079efbfd423d0bcb5406ce415cf4fa7"
+                "reference": "9f47251cb346017f9b8aaea8424868940156617f"
             },
             "type": "library",
             "extra": {
@@ -3469,7 +3469,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/customer_product",
-                "reference": "b3d1a2e7b47f52d8acb33cc5bbbe8084a965af0d"
+                "reference": "0bd019324883aa86be52a5adecc20b4650abff31"
             },
             "type": "library",
             "extra": {
@@ -3505,7 +3505,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/language",
-                "reference": "c9a2802fff72a122c1fe90d4712cd63c9b00f3a0"
+                "reference": "ed3aa4d1882421583294ce40824bf77fe4a6c87d"
             },
             "type": "library",
             "extra": {
@@ -3542,7 +3542,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/order",
-                "reference": "e396f3d5da43ef8840232e4b50a3b429c4723cb5"
+                "reference": "ec0fc8229ec3226e913e4d6152ee8df812e56e8f"
             },
             "type": "library",
             "extra": {
@@ -3578,7 +3578,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/product",
-                "reference": "4fd3516a674449b5ddc242166e3e7c7b8282fa16"
+                "reference": "05734b583aa411a639b232b62c64407c716f4b76"
             },
             "require": {
                 "molitor/currency": "*@dev"
@@ -3617,7 +3617,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/purchase",
-                "reference": "5323e273448f741ca0978a2c2d385dce1a37db5b"
+                "reference": "3d13cb3a99897458f63ff9a41167be8b83932b31"
             },
             "type": "library",
             "extra": {
@@ -3642,6 +3642,42 @@
                 }
             ],
             "description": "Purchase",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "molitor/scraper",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/scraper",
+                "reference": "0948796ee59a268c7052feb601f098d1a70df50f"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Molitor\\Scraper\\Providers\\ScraperServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\Scraper\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "Site scraper",
             "transport-options": {
                 "symlink": true,
                 "relative": true
@@ -3725,7 +3761,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/unas",
-                "reference": "f6a559625fdc0ced6ee9b24837c617a359c13658"
+                "reference": "bba0572348a39368ffe6d7d473a25ef1d697b6b9"
             },
             "require": {
                 "ext-curl": "*",
@@ -10967,6 +11003,7 @@
         "molitor/order": 20,
         "molitor/product": 20,
         "molitor/purchase": 20,
+        "molitor/scraper": 20,
         "molitor/setting": 20,
         "molitor/stock": 20,
         "molitor/unas": 20,
