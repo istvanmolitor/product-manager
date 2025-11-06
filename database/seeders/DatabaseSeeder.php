@@ -13,6 +13,7 @@ use Molitor\Language\database\seeders\LanguageSeeder;
 use Molitor\Order\database\seeders\OrderSeeder;
 use Molitor\Product\database\seeders\ProductSeeder;
 use Molitor\Purchase\database\seeders\PurchaseSeeder;
+use Molitor\Scraper\database\seeders\ScraperSeeder;
 use Molitor\Stock\database\seeders\StockSeeder;
 use Molitor\Unas\database\seeders\UnasSeeder;
 use Molitor\User\database\seeders\UserSeeder;
@@ -36,6 +37,7 @@ class DatabaseSeeder extends Seeder
             CustomerSeeder::class,
             PurchaseSeeder::class,
             CustomerProductSeeder::class,
+            ScraperSeeder::class,
         ]);
     }
 }

@@ -41,10 +41,12 @@ use Molitor\Order\Filament\Resources\OrderStatusResource;
 use Molitor\Stock\Filament\Resources\WarehouseResource;
 use Molitor\Stock\Filament\Resources\WarehouseRegionResource;
 use Molitor\Unas\Filament\Widgets\ProductCountWidget;
+use Molitor\Scraper\Filament\Widgets\ScraperLinksWidget;
 use Molitor\User\Filament\Resources\PermissionResource;
 use Molitor\User\Filament\Resources\UserGroupResource;
 use Molitor\User\Filament\Resources\UserResource;
 use Molitor\Scraper\Filament\Resources\ScraperResource;
+use Molitor\Scraper\Filament\Resources\ScraperUrlResource;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -86,6 +88,7 @@ class AdminPanelProvider extends PanelProvider
                 WarehouseProductResource::class,
                 StockMovementResource::class,
                 ScraperResource::class,
+                ScraperUrlResource::class,
                 CustomerProductResource::class,
                 CustomerListResource::class,
                 ScraperResource::class,
@@ -98,6 +101,7 @@ class AdminPanelProvider extends PanelProvider
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\Filament\Widgets')
             ->widgets([
                 ProductCountWidget::class,
+                ScraperLinksWidget::class,
             ])
             ->middleware([
                 EncryptCookies::class,
