@@ -3,7 +3,6 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
-use Molitor\Product\Models\Product;
 
 class Teszt extends Command
 {
@@ -26,6 +25,5 @@ class Teszt extends Command
      */
     public function handle()
     {
-        Product::factory()->count(10)->create();
     }
 }

@@ -106,16 +106,17 @@
         "molitor/address": "*@dev",
         "molitor/currency": "*@dev",
         "molitor/customer": "*@dev",
+        "molitor/customer_product": "*@dev",
         "molitor/language": "*@dev",
         "molitor/order": "*@dev",
         "molitor/product": "*@dev",
         "molitor/purchase": "*@dev",
+        "molitor/scraper": "*@dev",
         "molitor/setting": "*@dev",
         "molitor/stock": "*@dev",
         "molitor/unas": "*@dev",
         "molitor/user": "*@dev",
-        "molitor/customer_product": "*@dev",
-        "molitor/scraper": "*@dev"
+        "symfony/dom-crawler": "^7.3"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
