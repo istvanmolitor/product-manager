@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "46e1cf446c75c7be786cc332ed88fb97",
+    "content-hash": "c43558576a4c52fd8c8d5e95cf7404df",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -2020,6 +2020,516 @@
             "time": "2025-08-22T14:27:06+00:00"
         },
         {
+            "name": "istvanmolitor/address",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/address",
+                "reference": "5fd7a370edfa276f2cb7939a8e9abff37cb8c6ea"
+            },
+            "require": {
+                "istvanmolitor/user": "*@dev"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Molitor\\Address\\Providers\\AddressServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\Address\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "Address",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "istvanmolitor/currency",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/currency",
+                "reference": "c8d0fb2b8d6f0d818212719fabb6da328b7d75d9"
+            },
+            "require": {
+                "istvanmolitor/language": "*@dev"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Molitor\\Currency\\Providers\\CurrencyServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\Currency\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "Currency",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "istvanmolitor/customer",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/customer",
+                "reference": "8aa820073e99dd220b859b8de05e09060a2f2977"
+            },
+            "require": {
+                "istvanmolitor/currency": "*@dev",
+                "istvanmolitor/language": "*@dev"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Molitor\\Customer\\Providers\\CustomerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\Customer\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "Customer",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "istvanmolitor/customer_product",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/customer_product",
+                "reference": "d0b9023b3690d57e1a03d0f1bc0c9207d48a0b97"
+            },
+            "require": {
+                "istvanmolitor/customer": "*@dev"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Molitor\\CustomerProduct\\Providers\\CustomerProductServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\CustomerProduct\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "Ügyfél termékeinek kezelése",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "istvanmolitor/language",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/language",
+                "reference": "784cb08a3048de89f5a7397ec1eb8c7b7d989ebd"
+            },
+            "require": {
+                "istvanmolitor/user": "*@dev"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Molitor\\Language\\Providers\\LanguageServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\Language\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "Language",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "istvanmolitor/order",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/order",
+                "reference": "9be7b5e2933da7759e5e690a16280caaba532458"
+            },
+            "require": {
+                "istvanmolitor/product": "*@dev",
+                "istvanmolitor/user": "*@dev"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Molitor\\Order\\Providers\\OrderServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\Order\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "Order",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "istvanmolitor/product",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/product",
+                "reference": "f36637d64fe8677688945b593a0594e6a4c86576"
+            },
+            "require": {
+                "istvanmolitor/currency": "*@dev"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Molitor\\Product\\Providers\\ProductServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\Product\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "Product",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "istvanmolitor/purchase",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/purchase",
+                "reference": "26c1df762b73c7465f8c6b130baa30bed065d87b"
+            },
+            "require": {
+                "istvanmolitor/currency": "*@dev",
+                "istvanmolitor/user": "*@dev"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Molitor\\Purchase\\Providers\\PurchaseServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\Purchase\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "Purchase",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "istvanmolitor/scraper",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/scraper",
+                "reference": "d532fceab3c96123b54ad8f783cb847571f7be13"
+            },
+            "require": {
+                "istvanmolitor/user": "*@dev"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Molitor\\Scraper\\Providers\\ScraperServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\Scraper\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "Site scraper",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "istvanmolitor/setting",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/setting",
+                "reference": "a40978f762f3b43f1ad25fefed48b01ca1ec3ca8"
+            },
+            "require": {
+                "istvanmolitor/user": "*@dev"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Molitor\\Setting\\Providers\\SettingServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\Setting\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "Setting",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "istvanmolitor/stock",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/stock",
+                "reference": "175731c18603380625b97f5529468eacc8c74a61"
+            },
+            "require": {
+                "istvanmolitor/product": "*@dev"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Molitor\\Stock\\Providers\\StockServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\Stock\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "Stock",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "istvanmolitor/unas",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/unas",
+                "reference": "3b68b0f8bc6cb41990bacc3c1f0326514d4c611a"
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-simplexml": "*",
+                "istvanmolitor/product": "*@dev"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Molitor\\Unas\\Providers\\UnasServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\Unas\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "UNAS",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "istvanmolitor/user",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/user",
+                "reference": "4a985779578b3e72ea886a38c20f4923dae8159f"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Molitor\\User\\Providers\\UserServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\User\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "User",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
             "name": "kirschbaum-development/eloquent-power-joins",
             "version": "4.2.9",
             "source": {
@@ -3353,483 +3863,6 @@
                 "source": "https://github.com/Masterminds/html5-php/tree/2.10.0"
             },
             "time": "2025-07-25T09:04:22+00:00"
-        },
-        {
-            "name": "molitor/address",
-            "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "packages/address",
-                "reference": "04ea4bc8325698033268cc44d9182174bd14ad1d"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Molitor\\Address\\Providers\\AddressServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Molitor\\Address\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Molitor István",
-                    "email": "istvanmolitor@gmail.com"
-                }
-            ],
-            "description": "Address",
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
-        },
-        {
-            "name": "molitor/currency",
-            "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "packages/currency",
-                "reference": "dab468731088d6dea0ec5e0276e18cc3287c7169"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Molitor\\Currency\\Providers\\CurrencyServiceProvider"
-                    ],
-                    "aliases": []
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Molitor\\Currency\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Molitor István",
-                    "email": "istvanmolitor@gmail.com"
-                }
-            ],
-            "description": "Currency",
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
-        },
-        {
-            "name": "molitor/customer",
-            "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "packages/customer",
-                "reference": "9f47251cb346017f9b8aaea8424868940156617f"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Molitor\\Customer\\Providers\\CustomerServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Molitor\\Customer\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Molitor István",
-                    "email": "istvanmolitor@gmail.com"
-                }
-            ],
-            "description": "Customer",
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
-        },
-        {
-            "name": "molitor/customer_product",
-            "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "packages/customer_product",
-                "reference": "0bd019324883aa86be52a5adecc20b4650abff31"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Molitor\\CustomerProduct\\Providers\\CustomerProductServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Molitor\\CustomerProduct\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Molitor István",
-                    "email": "istvanmolitor@gmail.com"
-                }
-            ],
-            "description": "Ügyfél termékeinek kezelése",
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
-        },
-        {
-            "name": "molitor/language",
-            "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "packages/language",
-                "reference": "ed3aa4d1882421583294ce40824bf77fe4a6c87d"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Molitor\\Language\\Providers\\LanguageServiceProvider"
-                    ],
-                    "aliases": []
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Molitor\\Language\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Molitor István",
-                    "email": "istvanmolitor@gmail.com"
-                }
-            ],
-            "description": "Language",
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
-        },
-        {
-            "name": "molitor/order",
-            "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "packages/order",
-                "reference": "ec0fc8229ec3226e913e4d6152ee8df812e56e8f"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Molitor\\Order\\Providers\\OrderServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Molitor\\Order\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Molitor István",
-                    "email": "istvanmolitor@gmail.com"
-                }
-            ],
-            "description": "Order",
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
-        },
-        {
-            "name": "molitor/product",
-            "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "packages/product",
-                "reference": "05734b583aa411a639b232b62c64407c716f4b76"
-            },
-            "require": {
-                "molitor/currency": "*@dev"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Molitor\\Product\\Providers\\ProductServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Molitor\\Product\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Molitor István",
-                    "email": "istvanmolitor@gmail.com"
-                }
-            ],
-            "description": "Product",
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
-        },
-        {
-            "name": "molitor/purchase",
-            "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "packages/purchase",
-                "reference": "3d13cb3a99897458f63ff9a41167be8b83932b31"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Molitor\\Purchase\\Providers\\PurchaseServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Molitor\\Purchase\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Molitor István",
-                    "email": "istvanmolitor@gmail.com"
-                }
-            ],
-            "description": "Purchase",
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
-        },
-        {
-            "name": "molitor/scraper",
-            "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "packages/scraper",
-                "reference": "b8393ff86c2cfeb4a28ba4221755d7ef5495c6ee"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Molitor\\Scraper\\Providers\\ScraperServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Molitor\\Scraper\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Molitor István",
-                    "email": "istvanmolitor@gmail.com"
-                }
-            ],
-            "description": "Site scraper",
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
-        },
-        {
-            "name": "molitor/setting",
-            "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "packages/setting",
-                "reference": "dd315e5a520ccc9296b03085b176eb1972bd1536"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Molitor\\Setting\\Providers\\SettingServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Molitor\\Setting\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Molitor István",
-                    "email": "istvanmolitor@gmail.com"
-                }
-            ],
-            "description": "Setting",
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
-        },
-        {
-            "name": "molitor/stock",
-            "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "packages/stock",
-                "reference": "13d3e71acbd3425adc6705749d93ee41753af9c1"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Molitor\\Stock\\Providers\\StockServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Molitor\\Stock\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Molitor István",
-                    "email": "istvanmolitor@gmail.com"
-                }
-            ],
-            "description": "Stock",
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
-        },
-        {
-            "name": "molitor/unas",
-            "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "packages/unas",
-                "reference": "bba0572348a39368ffe6d7d473a25ef1d697b6b9"
-            },
-            "require": {
-                "ext-curl": "*",
-                "ext-simplexml": "*"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Molitor\\Unas\\Providers\\UnasServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Molitor\\Unas\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Molitor István",
-                    "email": "istvanmolitor@gmail.com"
-                }
-            ],
-            "description": "UNAS",
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
-        },
-        {
-            "name": "molitor/user",
-            "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "packages/user",
-                "reference": "c84e0bea30dbd19c7ef9ea1c693b61955cff5074"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Molitor\\User\\Providers\\UserServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Molitor\\User\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Molitor István",
-                    "email": "istvanmolitor@gmail.com"
-                }
-            ],
-            "description": "User",
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
         },
         {
             "name": "monolog/monolog",
@@ -11078,19 +11111,19 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "molitor/address": 20,
-        "molitor/currency": 20,
-        "molitor/customer": 20,
-        "molitor/customer_product": 20,
-        "molitor/language": 20,
-        "molitor/order": 20,
-        "molitor/product": 20,
-        "molitor/purchase": 20,
-        "molitor/scraper": 20,
-        "molitor/setting": 20,
-        "molitor/stock": 20,
-        "molitor/unas": 20,
-        "molitor/user": 20
+        "istvanmolitor/address": 20,
+        "istvanmolitor/currency": 20,
+        "istvanmolitor/customer": 20,
+        "istvanmolitor/customer_product": 20,
+        "istvanmolitor/language": 20,
+        "istvanmolitor/order": 20,
+        "istvanmolitor/product": 20,
+        "istvanmolitor/purchase": 20,
+        "istvanmolitor/scraper": 20,
+        "istvanmolitor/setting": 20,
+        "istvanmolitor/stock": 20,
+        "istvanmolitor/unas": 20,
+        "istvanmolitor/user": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
