@@ -96,6 +96,13 @@
             "options": {
                 "symlink": true
             }
+        },
+        {
+            "type": "path",
+            "url": "packages/product_scraper",
+            "options": {
+                "symlink": true
+            }
         }
     ],
     "require": {
@@ -116,6 +123,7 @@
         "istvanmolitor/stock": "*@dev",
         "istvanmolitor/unas": "*@dev",
         "istvanmolitor/user": "*@dev",
+        "istvanmolitor/product_scraper": "*@dev",
         "symfony/dom-crawler": "^7.3"
     },
     "require-dev": {

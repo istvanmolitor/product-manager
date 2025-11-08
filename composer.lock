@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c43558576a4c52fd8c8d5e95cf7404df",
+    "content-hash": "1ae0d6cc468d1d9636f24acfe2d8198c",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -2290,6 +2290,45 @@
                 }
             ],
             "description": "Product",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "istvanmolitor/product_scraper",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/product_scraper",
+                "reference": "86800c18963d8ec8b22dfb49399303ef4cefbf4a"
+            },
+            "require": {
+                "istvanmolitor/scraper": "*@dev"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Molitor\\ProductScraper\\Providers\\ProductScraperServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\ProductScraper\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "Product scraper",
             "transport-options": {
                 "symlink": true,
                 "relative": true
@@ -11118,6 +11157,7 @@
         "istvanmolitor/language": 20,
         "istvanmolitor/order": 20,
         "istvanmolitor/product": 20,
+        "istvanmolitor/product_scraper": 20,
         "istvanmolitor/purchase": 20,
         "istvanmolitor/scraper": 20,
         "istvanmolitor/setting": 20,
