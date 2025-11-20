@@ -23,6 +23,16 @@ services:
             - sail
         depends_on:
             - mysql
+    queue:
+        build:
+            context: './vendor/laravel/sail/runtimes/8.4'
+        image: sail-8.4/app
+        restart: unless-stopped
+        depends_on:
+            - mysql
+        volumes:
+            - '.:/var/www/html'
+        command: php artisan queue:work
     mysql:
         image: 'mysql/mysql-server:8.0'
         ports:

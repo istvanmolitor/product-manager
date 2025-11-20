@@ -92,6 +92,13 @@
         },
         {
             "type": "path",
+            "url": "packages/html-parser",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
             "url": "packages/scraper",
             "options": {
                 "symlink": true
@@ -118,13 +125,13 @@
         "istvanmolitor/order": "*@dev",
         "istvanmolitor/product": "*@dev",
         "istvanmolitor/purchase": "*@dev",
+        "istvanmolitor/html-parser": "*@dev",
         "istvanmolitor/scraper": "*@dev",
         "istvanmolitor/setting": "*@dev",
         "istvanmolitor/stock": "*@dev",
         "istvanmolitor/unas": "*@dev",
         "istvanmolitor/user": "*@dev",
-        "istvanmolitor/product_scraper": "*@dev",
-        "symfony/dom-crawler": "^7.3"
+        "istvanmolitor/product_scraper": "*@dev"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

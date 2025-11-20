@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1ae0d6cc468d1d9636f24acfe2d8198c",
+    "content-hash": "d35be595ac53589812c91cda53414758",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -2171,6 +2171,41 @@
                 }
             ],
             "description": "Ügyfél termékeinek kezelése",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "istvanmolitor/html-parser",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/html-parser",
+                "reference": "28a37f4f5d7360757070994abd93cf44e18af788"
+            },
+            "require": {
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "10.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\HtmlParser\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "HTML Parser",
             "transport-options": {
                 "symlink": true,
                 "relative": true
@@ -11154,6 +11189,7 @@
         "istvanmolitor/currency": 20,
         "istvanmolitor/customer": 20,
         "istvanmolitor/customer_product": 20,
+        "istvanmolitor/html-parser": 20,
         "istvanmolitor/language": 20,
         "istvanmolitor/order": 20,
         "istvanmolitor/product": 20,

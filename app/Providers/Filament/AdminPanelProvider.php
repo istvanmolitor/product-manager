@@ -17,6 +17,7 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Molitor\Currency\Filament\Resources\CurrencyResource;
+use Molitor\CustomerProduct\Filament\Resources\CustomerProductCategoryResource;
 use Molitor\CustomerProduct\Filament\Resources\CustomerProductResource;
 use Molitor\CustomerProduct\Filament\Resources\CustomerListResource;
 use Molitor\Language\Filament\Resources\LanguageResource;
@@ -42,6 +43,7 @@ use Molitor\Stock\Filament\Resources\WarehouseResource;
 use Molitor\Stock\Filament\Resources\WarehouseRegionResource;
 use Molitor\Unas\Filament\Widgets\ProductCountWidget;
 use Molitor\Scraper\Filament\Widgets\ScraperLinksWidget;
+use Molitor\Scraper\Filament\Pages\ScraperDashboard;
 use Molitor\User\Filament\Resources\PermissionResource;
 use Molitor\User\Filament\Resources\UserGroupResource;
 use Molitor\User\Filament\Resources\UserResource;
@@ -90,6 +92,7 @@ class AdminPanelProvider extends PanelProvider
                 ScraperResource::class,
                 ScraperUrlResource::class,
                 CustomerProductResource::class,
+                CustomerProductCategoryResource::class,
                 CustomerListResource::class,
                 ScraperResource::class,
             ])
@@ -97,6 +100,7 @@ class AdminPanelProvider extends PanelProvider
             ->pages([
                 Dashboard::class,
                 SettingsPage::class,
+                ScraperDashboard::class,
             ])
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\Filament\Widgets')
             ->widgets([
