@@ -17,6 +17,7 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Molitor\Currency\Filament\Resources\CurrencyResource;
+use Molitor\CustomerProduct\Filament\Pages\CustomerCategoriesPage;
 use Molitor\CustomerProduct\Filament\Resources\CustomerProductCategoryResource;
 use Molitor\CustomerProduct\Filament\Resources\CustomerProductResource;
 use Molitor\CustomerProduct\Filament\Resources\CustomerListResource;
@@ -101,6 +102,7 @@ class AdminPanelProvider extends PanelProvider
                 Dashboard::class,
                 SettingsPage::class,
                 ScraperDashboard::class,
+                CustomerCategoriesPage::class,
             ])
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\Filament\Widgets')
             ->widgets([
