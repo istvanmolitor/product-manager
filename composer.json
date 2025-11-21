@@ -110,6 +110,13 @@
             "options": {
                 "symlink": true
             }
+        },
+        {
+            "type": "path",
+            "url": "packages/shop",
+            "options": {
+                "symlink": true
+            }
         }
     ],
     "require": {
@@ -131,7 +138,8 @@
         "istvanmolitor/stock": "*@dev",
         "istvanmolitor/unas": "*@dev",
         "istvanmolitor/user": "*@dev",
-        "istvanmolitor/product_scraper": "*@dev"
+        "istvanmolitor/product_scraper": "*@dev",
+        "istvanmolitor/shop": "*@dev"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
