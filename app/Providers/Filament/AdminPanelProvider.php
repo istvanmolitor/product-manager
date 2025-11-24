@@ -17,6 +17,7 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Molitor\Currency\Filament\Resources\CurrencyResource;
+use Molitor\Currency\Filament\Resources\ExchangeRateResource;
 use Molitor\CustomerProduct\Filament\Pages\CustomerCategoriesPage;
 use Molitor\CustomerProduct\Filament\Resources\CustomerProductCategoryResource;
 use Molitor\CustomerProduct\Filament\Resources\CustomerProductResource;
@@ -67,6 +68,7 @@ class AdminPanelProvider extends PanelProvider
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->resources([
                 CurrencyResource::class,
+                ExchangeRateResource::class,
                 LanguageResource::class,
                 ProductUnitResource::class,
                 ProductFieldResource::class,
