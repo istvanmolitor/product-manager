@@ -35,6 +35,7 @@ use Molitor\Purchase\Filament\Resources\PurchaseStatusResource;
 use Molitor\Setting\Filament\Pages\SettingsPage;
 use Molitor\Stock\Filament\Resources\WarehouseProductResource;
 use Molitor\Stock\Filament\Resources\StockMovementResource;
+use Molitor\Stock\Filament\Resources\ProductResource as StockProductResource;
 use Molitor\Unas\Filament\Resources\UnasProductResource;
 use Molitor\Unas\Filament\Resources\UnasShopResource;
 use Molitor\Customer\Filament\Resources\CustomerGroupResource;
@@ -82,6 +83,7 @@ class AdminPanelProvider extends PanelProvider
                 OrderResource::class,
                 WarehouseResource::class,
                 WarehouseRegionResource::class,
+                StockProductResource::class,
                 UnasShopResource::class,
                 UnasProductResource::class,
                 BarcodeResource::class,
@@ -90,7 +92,6 @@ class AdminPanelProvider extends PanelProvider
                 UserResource::class,
                 PurchaseResource::class,
                 PurchaseStatusResource::class,
-                WarehouseProductResource::class,
                 StockMovementResource::class,
                 ScraperResource::class,
                 ScraperUrlResource::class,
