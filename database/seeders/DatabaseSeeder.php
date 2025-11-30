@@ -3,9 +3,9 @@
 namespace Database\Seeders;
 
 use App\Models\User;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Molitor\Address\database\seeders\AddressSeeder;
+use Molitor\Cms\database\seeders\CmsSeeder;
 use Molitor\Currency\database\seeders\CurrencySeeder;
 use Molitor\Customer\database\seeders\CustomerSeeder;
 use Molitor\CustomerProduct\database\seeders\CustomerProductSeeder;
@@ -40,6 +40,7 @@ class DatabaseSeeder extends Seeder
             PurchaseSeeder::class,
             CustomerProductSeeder::class,
             ScraperSeeder::class,
+            CmsSeeder::class,
         ]);
     }
 }

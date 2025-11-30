@@ -4,3 +4,8 @@
 @source '../../../../resources/views/filament/**/*';
 @source '../../../../packages/**/resources/views/filament/pages/*';
 @source '../../../../packages/setting/resources/views/filament/pages/*';
+
+@source '../../../../packages/cms/resources/views/layouts/*';
+@source '../../../../packages/cms/resources/views/layouts/partials/*';
+@source '../../../../packages/cms/resources/views/page/*';
+@source '../../../../packages/cms/resources/views/**/*.blade.php';

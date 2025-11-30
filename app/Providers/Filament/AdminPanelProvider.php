@@ -52,6 +52,10 @@ use Molitor\User\Filament\Resources\UserGroupResource;
 use Molitor\User\Filament\Resources\UserResource;
 use Molitor\Scraper\Filament\Resources\ScraperResource;
 use Molitor\Scraper\Filament\Resources\ScraperUrlResource;
+use Molitor\Cms\Filament\Resources\ContentRegionResource;
+use Molitor\Cms\Filament\Resources\PageResource;
+use Molitor\Cms\Filament\Resources\MenuResource;
+use Molitor\Cms\Filament\Resources\MenuItemResource;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -99,6 +103,10 @@ class AdminPanelProvider extends PanelProvider
                 CustomerProductCategoryResource::class,
                 CustomerListResource::class,
                 ScraperResource::class,
+                ContentRegionResource::class,
+                PageResource::class,
+                MenuResource::class,
+                MenuItemResource::class,
             ])
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->pages([
