@@ -120,6 +120,13 @@
         },
         {
             "type": "path",
+            "url": "packages/menu",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
             "url": "packages/cms",
             "options": {
                 "symlink": true
@@ -147,6 +154,7 @@
         "istvanmolitor/user": "*@dev",
         "istvanmolitor/product_scraper": "*@dev",
         "istvanmolitor/shop": "*@dev",
+        "istvanmolitor/menu": "*@dev",
         "istvanmolitor/cms": "*@dev"
     },
     "require-dev": {
