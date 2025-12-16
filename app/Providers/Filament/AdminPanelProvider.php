@@ -42,6 +42,8 @@ use Molitor\Customer\Filament\Resources\CustomerGroupResource;
 use Molitor\Customer\Filament\Resources\CustomerResource;
 use Molitor\Address\Filament\Resources\CountryResource;
 use Molitor\Order\Filament\Resources\OrderStatusResource;
+use Molitor\Order\Filament\Resources\OrderPaymentResource;
+use Molitor\Order\Filament\Resources\OrderShippingResource;
 use Molitor\Stock\Filament\Resources\WarehouseResource;
 use Molitor\Stock\Filament\Resources\WarehouseRegionResource;
 use Molitor\Unas\Filament\Widgets\ProductCountWidget;
@@ -84,6 +86,8 @@ class AdminPanelProvider extends PanelProvider
                 CustomerResource::class,
                 CountryResource::class,
                 OrderStatusResource::class,
+                OrderPaymentResource::class,
+                OrderShippingResource::class,
                 OrderResource::class,
                 WarehouseResource::class,
                 WarehouseRegionResource::class,

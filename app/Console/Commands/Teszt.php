@@ -3,6 +3,8 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+use Molitor\Unas\Models\UnasShop;
+use Molitor\Unas\Services\UnasOrderService;
 
 class Teszt extends Command
 {
@@ -25,5 +27,9 @@ class Teszt extends Command
      */
     public function handle()
     {
+        $shop = UnasShop::find(1);
+
+        $unasOrderService = app(UnasOrderService::class);
+        $unasOrderService->downloadOrderByCode($shop, '27786-100028');
     }
 }
