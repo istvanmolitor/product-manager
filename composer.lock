@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4fc5510344854c6b3c475421810d2244",
+    "content-hash": "2e9a2b089c6bf40f1d7d2e40e5ca568a",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -2025,7 +2025,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/address",
-                "reference": "5fd7a370edfa276f2cb7939a8e9abff37cb8c6ea"
+                "reference": "93b77e8af49c84ea43e3ec392f737a1d05a773df"
             },
             "require": {
                 "istvanmolitor/user": "*@dev"
@@ -2064,7 +2064,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/cms",
-                "reference": "02414ea2689aba774b83817849a4ece391177e24"
+                "reference": "f18e232c16fb5de833e1901c4521e561683eb46e"
             },
             "require": {
                 "istvanmolitor/language": "*@dev",
@@ -2105,7 +2105,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/currency",
-                "reference": "ce3fe5654f720061a5c89c41ee272559891b08c7"
+                "reference": "7bc8cc040f7716c9269a3a65c8e90a68b7be67da"
             },
             "require": {
                 "istvanmolitor/language": "*@dev"
@@ -2144,7 +2144,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/customer",
-                "reference": "4978b7de911cbb26594e233432e149c446a05d3f"
+                "reference": "61a678c2df98717ac32e0bf6d2c3354984483a55"
             },
             "require": {
                 "istvanmolitor/currency": "*@dev",
@@ -2258,7 +2258,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/language",
-                "reference": "8b0955b8739b6aae0731ebf8631ff338e74e46f6"
+                "reference": "4ab662edaa70754d8e006af8fad520dca9664603"
             },
             "require": {
                 "istvanmolitor/user": "*@dev"
@@ -2298,7 +2298,10 @@
             "dist": {
                 "type": "path",
                 "url": "packages/menu",
-                "reference": "a7edee529855676f3c087cc90b7a75290e354256"
+                "reference": "98356af8810cebc96d7e747cf6bfb30536b16cfc"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^10.0|^11.0"
             },
             "type": "library",
             "extra": {
@@ -2312,6 +2315,11 @@
             "autoload": {
                 "psr-4": {
                     "Molitor\\Menu\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Molitor\\Menu\\Tests\\": "tests/"
                 }
             },
             "license": [
@@ -2335,7 +2343,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/order",
-                "reference": "9be7b5e2933da7759e5e690a16280caaba532458"
+                "reference": "c56472144ac3b48867c82c320914e9c5980a58bc"
             },
             "require": {
                 "istvanmolitor/product": "*@dev",
@@ -2375,7 +2383,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/product",
-                "reference": "af080994a1ceafc1936bd3904dcc86c1884848b3"
+                "reference": "3e6833e12726d24b1001080e1f7fffaf86ca779b"
             },
             "require": {
                 "istvanmolitor/currency": "*@dev"
@@ -2572,10 +2580,17 @@
             "dist": {
                 "type": "path",
                 "url": "packages/shop",
-                "reference": "77fe0d0a1a148713eaaff0125fb245ae50e029b5"
+                "reference": "c58e4451cfd1f0cc87cbbbfd58b13dba741f43a5"
             },
             "require": {
-                "istvanmolitor/shop": "*@dev"
+                "istvanmolitor/address": "*@dev",
+                "istvanmolitor/currency": "*@dev",
+                "istvanmolitor/customer": "*@dev",
+                "istvanmolitor/language": "*@dev",
+                "istvanmolitor/menu": "*@dev",
+                "istvanmolitor/order": "*@dev",
+                "istvanmolitor/product": "*@dev",
+                "istvanmolitor/stock": "*@dev"
             },
             "type": "library",
             "extra": {
@@ -2611,7 +2626,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/stock",
-                "reference": "2b9f137343c068dd30296c5fc4896de887295a08"
+                "reference": "ece8a7d040172822dfacc7cc1ea34dc833e1ed62"
             },
             "require": {
                 "istvanmolitor/product": "*@dev"
@@ -2650,7 +2665,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/unas",
-                "reference": "3c8a62672f4ecb0fae00b36872e95e74f983e205"
+                "reference": "3c1e923ded786f348651146b14350532f8f2b2f9"
             },
             "require": {
                 "ext-curl": "*",
@@ -2691,7 +2706,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/user",
-                "reference": "4a985779578b3e72ea886a38c20f4923dae8159f"
+                "reference": "5587e024f893395279752cb072d358c780cc52d8"
             },
             "type": "library",
             "extra": {
@@ -3002,6 +3017,85 @@
                 "source": "https://github.com/laravel/framework"
             },
             "time": "2025-11-26T19:24:25+00:00"
+        },
+        {
+            "name": "laravel/horizon",
+            "version": "v5.41.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/horizon.git",
+                "reference": "eb6738246ab9d3450b705126b9794dfb0ea371b3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/horizon/zipball/eb6738246ab9d3450b705126b9794dfb0ea371b3",
+                "reference": "eb6738246ab9d3450b705126b9794dfb0ea371b3",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-pcntl": "*",
+                "ext-posix": "*",
+                "illuminate/contracts": "^9.21|^10.0|^11.0|^12.0",
+                "illuminate/queue": "^9.21|^10.0|^11.0|^12.0",
+                "illuminate/support": "^9.21|^10.0|^11.0|^12.0",
+                "nesbot/carbon": "^2.17|^3.0",
+                "php": "^8.0",
+                "ramsey/uuid": "^4.0",
+                "symfony/console": "^6.0|^7.0",
+                "symfony/error-handler": "^6.0|^7.0",
+                "symfony/polyfill-php83": "^1.28",
+                "symfony/process": "^6.0|^7.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "orchestra/testbench": "^7.55|^8.36|^9.15|^10.8",
+                "phpstan/phpstan": "^1.10|^2.0",
+                "predis/predis": "^1.1|^2.0|^3.0"
+            },
+            "suggest": {
+                "ext-redis": "Required to use the Redis PHP driver.",
+                "predis/predis": "Required when not using the Redis PHP driver (^1.1|^2.0|^3.0)."
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Horizon": "Laravel\\Horizon\\Horizon"
+                    },
+                    "providers": [
+                        "Laravel\\Horizon\\HorizonServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "6.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Horizon\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Dashboard and code-driven configuration for Laravel queues.",
+            "keywords": [
+                "laravel",
+                "queue"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/horizon/issues",
+                "source": "https://github.com/laravel/horizon/tree/v5.41.0"
+            },
+            "time": "2025-12-14T15:55:28+00:00"
         },
         {
             "name": "laravel/prompts",
