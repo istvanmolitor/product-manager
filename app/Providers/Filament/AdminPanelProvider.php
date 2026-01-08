@@ -30,6 +30,7 @@ use Molitor\Product\Filament\Resources\ProductFieldOptionResource;
 use Molitor\Product\Filament\Resources\ProductFieldResource;
 use Molitor\Product\Filament\Resources\ProductResource;
 use Molitor\Product\Filament\Resources\ProductUnitResource;
+use Molitor\Product\Filament\Pages\ProductCategoriesPage;
 use Molitor\Purchase\Filament\Resources\PurchaseResource;
 use Molitor\Purchase\Filament\Resources\PurchaseStatusResource;
 use Molitor\Setting\Filament\Pages\SettingsPage;
@@ -37,7 +38,10 @@ use Molitor\Stock\Filament\Resources\WarehouseProductResource;
 use Molitor\Stock\Filament\Resources\StockMovementResource;
 use Molitor\Stock\Filament\Resources\ProductResource as StockProductResource;
 use Molitor\Unas\Filament\Resources\UnasProductResource;
+use Molitor\Unas\Filament\Resources\UnasProductCategoryResource;
+use Molitor\Unas\Filament\Resources\UnasProductParameterResource;
 use Molitor\Unas\Filament\Resources\UnasShopResource;
+use Molitor\Unas\Filament\Pages\UnasProductCategoriesPage;
 use Molitor\Customer\Filament\Resources\CustomerGroupResource;
 use Molitor\Customer\Filament\Resources\CustomerResource;
 use Molitor\Address\Filament\Resources\CountryResource;
@@ -93,7 +97,9 @@ class AdminPanelProvider extends PanelProvider
                 WarehouseRegionResource::class,
                 StockProductResource::class,
                 UnasShopResource::class,
+                UnasProductCategoryResource::class,
                 UnasProductResource::class,
+                UnasProductParameterResource::class,
                 BarcodeResource::class,
                 UserGroupResource::class,
                 PermissionResource::class,
@@ -118,6 +124,8 @@ class AdminPanelProvider extends PanelProvider
                 SettingsPage::class,
                 ScraperDashboard::class,
                 CustomerCategoriesPage::class,
+                ProductCategoriesPage::class,
+                UnasProductCategoriesPage::class,
             ])
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\Filament\Widgets')
             ->widgets([

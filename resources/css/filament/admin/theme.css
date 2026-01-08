@@ -10,3 +10,4 @@
 @source '../../../../packages/cms/resources/views/page/*';
 @source '../../../../packages/cms/resources/views/**/*.blade.php';
 
+@source '../../../../packages/product/resources/views/**/*.blade.php';

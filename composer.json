@@ -8,6 +8,13 @@
     "repositories": [
         {
             "type": "path",
+            "url": "packages/tree",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
             "url": "packages/currency",
             "options": {
                 "symlink": true
@@ -136,6 +143,7 @@
     "require": {
         "php": "^8.2",
         "filament/filament": "^4.0",
+        "istvanmolitor/tree": "*@dev",
         "istvanmolitor/address": "*@dev",
         "istvanmolitor/cms": "*@dev",
         "istvanmolitor/currency": "*@dev",
